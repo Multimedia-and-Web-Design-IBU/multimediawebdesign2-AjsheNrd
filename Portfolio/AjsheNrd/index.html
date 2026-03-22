@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- WEEK 3 - META TAGS -->
+<meta name="description" content="Portfolio of Ajshe Nuredini, Computer Engineering student learning HTML">
+<meta name="author" content="Ajshe Nuredini">
+
+<title>My Portfolio | Ajshe Nuredini</title>
+
+</head>
+
+<body>
+
+<!-- WEEK 4 - EXERCISE 3 (ACCESSIBILITY) -->
+<a href="#main">Skip to main content</a>
+
+<!-- WEEK 3 - HEADER & NAVIGATION -->
+<header>
+
+<h1>Ajshe Nuredini</h1>
+
+<!-- WEEK 4 - EXERCISE 4 (FIGURE) -->
+<figure>
+<img src="profile.jpg" alt="Photo of Ajshe Nuredini" width="150">
+<figcaption>My profile photo</figcaption>
+</figure>
+
+<nav>
+<a href="#about">About</a> |
+<a href="#skills">Skills</a> |
+<a href="#projects">Projects</a> |
+<a href="#media">Media</a> |
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<main id="main">
+
+<!-- WEEK 2 - ABOUT SECTION -->
+<section id="about">
+
+<h2>About Me</h2>
+
+<p>
+Hello, my name is Ajshe. I am a <strong>Computer Engineering</strong> student in Skopje and I am <em>learning</em> HTML.
+</p>
+
+<!-- WEEK 4 - EXERCISE 4 (DETAILS) -->
+<details>
+<summary>Read more about me</summary>
+<p>I am passionate about web development and always improving my skills.</p>
+</details>
+
+<!-- WEEK 4 - EXERCISE 4 (BLOCKQUOTE) -->
+<blockquote>
+<p>The best way to learn is by doing.</p>
+<cite>— Unknown</cite>
+</blockquote>
+
+</section>
+
+<hr>
+
+<!-- WEEK 2 - SKILLS -->
+<section id="skills">
+
+<h2>My Skills</h2>
+
+<ul>
+<li>HTML</li>
+<li>Programming</li>
+<li>Problem solving</li>
+<li>Learning new technologies</li>
+</ul>
+
+<!-- WEEK 4 - EXERCISE 4 (PROGRESS) -->
+<p>HTML:</p>
+<progress value="80" max="100">80%</progress>
+
+<p>Programming:</p>
+<progress value="60" max="100">60%</progress>
+
+<p>Problem Solving:</p>
+<progress value="70" max="100">70%</progress>
+
+</section>
+
+<!-- WEEK 2 - LEARNING STEPS -->
+<section>
+
+<h2>How I Learn HTML</h2>
+
+<ol>
+<li>Read the lesson</li>
+<li>Watch tutorials</li>
+<li>Practice coding</li>
+<li>Do exercises</li>
+<li>Fix mistakes</li>
+</ol>
+
+</section>
+
+<!-- WEEK 2 - LINKS -->
+<section>
+
+<h2>Connect With Me</h2>
+
+<a href="https://www.google.com">Visit Google</a><br>
+<a href="https://github.com" target="_blank">Visit GitHub</a><br>
+<a href="mailto:you@email.com" aria-label="Send me an email">Send me an email</a>
+
+</section>
+
+<!-- WEEK 3 - PROJECTS TABLE -->
+<section id="projects">
+
+<h2>My Projects</h2>
+
+<table border="1">
+
+<thead>
+
+<tr>
+<th colspan="3">Portfolio Projects</th>
+</tr>
+
+<tr>
+<th>Project Name</th>
+<th>Description</th>
+<th>Status</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Portfolio Website</td>
+<td>My personal portfolio website</td>
+<td>In Progress</td>
+</tr>
+
+<tr>
+<td>Calculator App</td>
+<td>A simple calculator project</td>
+<td>Planned</td>
+</tr>
+
+<tr>
+<td>Weather App</td>
+<td>A weather information website</td>
+<td>Idea</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</section>
+
+<!-- WEEK 4 - EXERCISE 1 (MEDIA SECTION) -->
+<section id="media">
+
+<h2>Media & Work</h2>
+
+<!-- FINAL WORKING VIDEO -->
+<iframe 
+width="560" 
+height="315"
+src="https://www.youtube.com/embed/pQN-pnXPaVg"
+title="HTML Full Course"
+frameborder="0"
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+allowfullscreen>
+</iframe>
+
+</section>
+
+<!-- WEEK 3 - CONTACT FORM -->
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form>
+
+<div>
+<label for="name">Full Name:</label>
+<input type="text" id="name" required>
+</div>
+
+<br>
+
+<div>
+<label for="email">Email:</label>
+<input type="email" id="email" required>
+</div>
+
+<br>
+
+<div>
+<label for="subject">Subject:</label>
+<input type="text" id="subject">
+</div>
+
+<br>
+
+<!-- WEEK 4 - EXERCISE 4 (DATALIST) -->
+<div>
+<label for="source">How did you find me?</label>
+
+<input list="sources" id="source">
+
+<datalist id="sources">
+<option value="Google">
+<option value="Friend">
+<option value="Social Media">
+</datalist>
+
+</div>
+
+<br>
+
+<div>
+<label for="message">Message:</label><br>
+<textarea id="message" rows="5" cols="40"></textarea>
+</div>
+
+<br>
+
+<input type="submit" value="Send Message">
+
+</form>
+
+<!-- WEEK 4 - EXERCISE 2 (GOOGLE MAP) -->
+<p>Find me here:</p>
+
+<div>
+<iframe
+src="https://www.google.com/maps?q=Skopje&output=embed"
+width="600"
+height="450"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+title="Map of Skopje">
+</iframe>
+</div>
+
+</section>
+
+</main>
+
+<!-- WEEK 3 - FOOTER -->
+<footer>
+
+<p>&copy; 2025 Ajshe Nuredini</p>
+
+</footer>
+
+</body>
+
+</html>

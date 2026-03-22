@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Portfolio | Ajshe Nuredini</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="progress-bar"></div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-content">
+
+    <div class="hero-text">
+      <h1><span id="typing"></span></h1>
+      <p>Future Computer Engineer building modern and creative web experiences.</p>
+      <button onclick="scrollToSection('about')">Explore More</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="Profile Photo">
+    </div>
+
+  </div>
+</header>
+
+<!-- NAV -->
+<nav class="navbar">
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#media">Media</a>
+  <a href="#contact">Contact</a>
+  <button id="darkToggle">🌙</button>
+</nav>
+
+<!-- ABOUT -->
+<section id="about" class="fade-in">
+  <h2>About Me</h2>
+
+  <p>
+    Hello! I'm Ajshe, a Computer Engineering student based in Skopje.  
+    I enjoy building clean, modern, and user-friendly websites.
+  </p>
+
+  <p>
+    My goal is to become a professional developer and create digital experiences that are not only functional but also visually appealing.
+  </p>
+
+  <button onclick="toggleMore()">Read More</button>
+
+  <p id="moreText" class="hidden">
+    I am constantly learning new technologies, improving my coding skills, and challenging myself with new projects.
+    I believe consistency and practice are the keys to success in tech.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<div class="skill fade-in" onclick="toggleSkill(this, '80%')">
+  <div class="skill-title">HTML</div>
+  <div class="skill-bar">
+    <div class="skill-fill"></div>
+  </div>
+  <div class="skill-info">Strong understanding of HTML</div>
+</div>
+
+<div class="skill fade-in" onclick="toggleSkill(this, '60%')">
+  <div class="skill-title">Programming</div>
+  <div class="skill-bar">
+    <div class="skill-fill"></div>
+  </div>
+  <div class="skill-info">Learning logic and coding</div>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="fade-in">
+  <h2>Projects</h2>
+
+  <div class="card">
+    <h3>Portfolio Website</h3>
+    <p>My personal website with modern design.</p>
+  </div>
+
+  <div class="card">
+    <h3>Calculator App</h3>
+    <p>A simple but functional calculator.</p>
+  </div>
+
+</section>
+
+<section id="media" class="fade-in">
+  <h2>Media</h2>
+
+  <p>
+    Watch a quick introduction to HTML and how I started my journey in web development.
+  </p>
+
+  <button onclick="toggleVideo()">Show Video</button>
+
+  <div id="videoContainer" class="hidden">
+  <iframe width="560" height="315"
+    src="https://www.youtube.com/embed/FQdaUv95mR8?si=tawU5HmUoMEqqoI8"
+    title="YouTube video player" frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+
+</section>
+
+<section id="contact" class="fade-in">
+  <h2>Contact Me</h2>
+
+  <p>Feel free to reach out to me for collaborations or questions.</p>
+
+  <div class="contact-info">
+    <p>📧 Email: <a href="mailto:nuredinigroup@gmail.com">nuredinigroup@gmail.com</a></p>
+    <p>📍 Location: Skopje</p>
+    <p>📞 Phone: +389 75 403 432</p>
+  </div>
+
+  <button onclick="toggleMap()">Show Location</button>
+
+  <div id="mapContainer" class="hidden">
+    <iframe
+      src="https://www.google.com/maps?q=Skopje&output=embed"
+      width="100%" height="300" style="border:0;">
+    </iframe>
+  </div>
+
+  <form>
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message">
+  </form>
+
+</section>
+
+<footer>
+  <p>© 2025 Ajshe Nuredini</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
